@@ -1,0 +1,141 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.home {
+    font-family: Arial, sans-serif;
+    background-color: bisque;
+    color: #333;
+    margin: 5;
+    padding: 5;
+    line-height: 1.6; 
+    background-image: url('joanna-kosinska-unsplash.jpg');
+    background-size: 2900px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('thumbnail-3.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    opacity: 0.25; 
+    z-index: -1;
+}
+
+.content-wrapper {
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 800px;
+    height: auto;
+    align-content: center;
+    text-align: left;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: aliceblue;
+    border: 3px solid gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+h1 {
+    font-size: 22px;
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    color: #555;
+    margin-left: 20px;
+    font-family: 'Anton SC', serif;
+}
+
+p {
+    font-size: 18px;
+    margin-left: 35px;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 500px;
+    height: auto;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    margin-left: 35px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #444;
+    margin-top: -15px;
+    margin-left: 20px;
+}
+
+h4 {
+    font-size: 60px;
+    color: #333;
+    text-align: center;
+    font-family: 'Anton SC', serif;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+footer a {
+    margin: 0 10px;
+    font-size: 18px;
+}
